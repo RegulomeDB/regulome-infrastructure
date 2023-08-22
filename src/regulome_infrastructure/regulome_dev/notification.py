@@ -20,3 +20,4 @@ class Notification(Construct):
             self,
             'AlarmNotificationTopic',
             topic_arn='arn:aws:sns:us-west-2:281708499374:NotificationStack-AwsNotificationsRegulomeChannelAlarmNotificationTopicFE528F0C-QNjocwDnSXSF'
+        )
