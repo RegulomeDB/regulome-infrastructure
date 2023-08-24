@@ -11,9 +11,9 @@ class Notification(Construct):
 
     def __init__(self, scope: Construct, construct_id: str, **kwargs: Any) -> None:
         super().__init__(scope, construct_id, **kwargs)
-        self.encode_dcc_chatbot = SlackChannelConfiguration.from_slack_channel_configuration_arn(
+        self.regulomedb_chatbot = SlackChannelConfiguration.from_slack_channel_configuration_arn(
             self,
-            'EncodeDCCChatbot',
+            'RegulomeDBChatbot',
             'arn:aws:chatbot::281708499374:chat-configuration/slack-channel/aws-notifications'
         )
         self.alarm_notification_topic = Topic.from_topic_arn(
