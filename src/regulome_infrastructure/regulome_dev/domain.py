@@ -10,7 +10,7 @@ class Domain(Construct):
 
     def __init__(self, scope: Construct, construct_id: str, **kwargs: Any) -> None:
         super().__init__(scope, construct_id, **kwargs)
-        self.name = 'dev.regulomedb.org'
+        self.name = 'demo.regulomedb.org'
         self.certificate = Certificate.from_certificate_arn(
             self,
             'DomainCertificate',
